@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to my blog! - Home</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<style>
+body,html {
+  font-family: 'Montserrat', sans-serif;
+  height:100%;
+  margin:0;
+}
+h1 {
+  font-size: 4.5em;
+  margin:10px;
+  background-color: lightskyblue;
+}
+p {
+  text-align: center;
+}
+#img {
+  background-image: url("/assets/blog.jpg");
+  height: 25%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.70;
+}
+</style>
+<body>
+<header>
+  <p>Welcome to my Blog!</p>
+</header>
+
+<div id="img"></div>
+
+<h1>Home</h1>
+
+<hr/>
+
+<div id="wrapper">
+  <div id="left">
+    <p>This is a paragraph.</p>
+  </div>
+  <div id="right">
+    <p>This is a paragraph.</p>
+    <p><%= link_to 'About', about_path %></p>
+  </div>
+</div>
+
+<hr/>
+
+<footer>
+  <p>Ivan Landeka &copy; 2017</p>
+</footer>
+
+</body>
+</html>
