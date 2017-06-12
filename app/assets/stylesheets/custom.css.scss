@@ -4,6 +4,73 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+// General
+body,html {
+  font-family: 'Montserrat', sans-serif;
+  height:100%;
+  margin:0;
+}
+
+h2 {
+  font-size: 4.5em;
+  margin:10px;
+  background-color: lightskyblue;
+}
+
+p {
+  text-align: center;
+}
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer small {
+  float: left;
+}
+
+// Classes
+.center {
+  text-align: center;
+}
+
+.jumbotron {
+  background-image: asset-url('blog.jpg');
+  background-size: cover;
+  height: 500px;
+}
+
+.jumbotron h1 {
+  color: firebrick;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.btn-xlarge {
+  font-size: 1.7em;
+  background-color: black;
+}
+
+// IDs
 #logo {
   float: left;
   font-size: 1.7em;
@@ -16,8 +83,4 @@
 #logo:hover {
   color: grey;
   text-decoration: none;
-}
-
-.center {
-  text-align: center;
 }
