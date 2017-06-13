@@ -48,7 +48,7 @@ footer small {
 }
 
 .jumbotron h1 {
-  color: firebrick;
+  color: #f44336;
   text-align: center;
   margin-bottom: 30px;
   letter-spacing: -1px;
@@ -69,17 +69,21 @@ footer small {
   margin-top: 0;
 }
 
+.button:hover {
+  background-color: #f44336;
+}
+
 // IDs
 #logo {
   float: left;
   font-size: 1.7em;
   text-transform: uppercase;
   letter-spacing: -1px;
-  color: black;
+  color: grey;
   font-weight: bold;
 }
 
 #logo:hover {
-  color: grey;
+  color: black;
   text-decoration: none;
 }
