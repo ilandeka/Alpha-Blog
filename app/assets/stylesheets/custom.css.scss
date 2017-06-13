@@ -5,11 +5,6 @@
 @import "bootstrap";
 
 // General
-body {
-  font-family: 'Montserrat', sans-serif;
-  //font-family: 'Oswald', sans-serif;
-}
-
 footer {
   margin-top: 45px;
   padding-top: 5px;
@@ -70,6 +65,17 @@ footer small {
 
 .button:hover {
   background-color: #f44336;
+}
+
+.article-title {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.article-body {
+  border-top: 1px sold #eaeaea;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 // IDs
