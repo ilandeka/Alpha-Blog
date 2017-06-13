@@ -5,6 +5,10 @@
 @import "bootstrap";
 
 // General
+body {
+  font-family: 'Oswald', sans-serif;  
+}
+
 footer {
   margin-top: 45px;
   padding-top: 5px;
@@ -54,6 +58,10 @@ footer small {
   background-color: black;
 }
 
+.btn-xlarge:hover {
+  background-color: #f44336;
+}
+
 .article-actions {
   border-top: 1px solid #eaeaea;
   padding-top: 5px;
@@ -61,10 +69,6 @@ footer small {
 
 .description {
   margin-top: 0;
-}
-
-.button:hover {
-  background-color: #f44336;
 }
 
 .article-title {
@@ -76,6 +80,10 @@ footer small {
   border-top: 1px sold #eaeaea;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+.button:hover {
+  background-color: #f44336;
 }
 
 // IDs
