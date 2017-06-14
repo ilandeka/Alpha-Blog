@@ -15,3 +15,10 @@
 //= require bootstrap-sprockets
 //= require turbolinks
 //= require_tree .
+
+// This code snippet is used to fade out alert messages
+$(document).ready(function(){
+  setTimeout(function(){
+    $('.alert').fadeOut();
+  }, 2200);// 2.2 seconds
+});
