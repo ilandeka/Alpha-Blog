@@ -29,8 +29,10 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
-# BCrypt Gem
+# bcrypt Gem
 gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
+# byebug Gem
+gem 'byebug'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
