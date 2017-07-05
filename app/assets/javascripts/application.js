@@ -20,5 +20,5 @@
 $(document).ready(function(){
   setTimeout(function(){
     $('.alert').fadeOut();
-  }, 2200);// 2.2 seconds
+  }, 3400);// 3.4 seconds
 });
