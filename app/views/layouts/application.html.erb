@@ -2,21 +2,31 @@
 <html>
   <head>
     <title>Alpha Blog</title>
+    <%= favicon_link_tag 'icon.png' %>
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body onload="myFunction()" style="margin:0;">
+
+    <!-- Back to top button -->
+    <button onclick="topFunction()" id="myBtn" title="Back to Top" align="center">&#x22C0;</button>
+
+    <!-- Navigation bar -->
     <%= render 'layouts/navigation' %>
 
     <div class="container">
+      <!-- Error messages -->
       <%= render 'layouts/messages' %>
       <%= yield %>
     </div>
 
+    <!-- Footer -->
     <%= render 'layouts/footer' %>
+
+    <!-- Debugger -->
     <%= debug(params) if Rails.env.development? %>
 
   </body>

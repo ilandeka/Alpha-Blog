@@ -4,7 +4,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-// General
+/*-- General --*/
 body {
   font-family: 'Oswald', sans-serif;
 }
@@ -34,7 +34,7 @@ footer small {
   float: left;
 }
 
-// Classes
+/*-- Classes --*/
 .center {
   text-align: center;
 }
@@ -42,7 +42,7 @@ footer small {
 .navbar {
   margin-bottom: 20px;
   padding: 0;
-  background-color: rgba(255,255,255,0.3);   // Transparent, 0.3 -> opacity
+  background-color: rgba(255,255,255,0.7);   // Transparent, 0.7 -> opacity
 }
 
 .jumbotron {
@@ -101,9 +101,27 @@ footer small {
 
 .button:hover {
   background-color: #f44336;
+  color: white;
 }
 
-// IDs
+.chip {
+  display: inline-block;
+  padding: 0px 10px 0px 25px;
+  height: 22px;
+  line-height: 22px;
+  border-radius: 25px;
+  background-color: #f1f1f1;
+}
+
+.chip img {
+  float: left;
+  margin: -5px 20px 25px -25px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+/*-- IDs --*/
 #logo {
   float: left;
   font-size: 1.7em;
@@ -116,4 +134,81 @@ footer small {
 #logo:hover {
   color: grey;
   text-decoration: none;
+}
+
+// Code from w3schools - Scroll to top button
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  //background-color: rgba(#555,0.4); /* Set a background color */
+  background-color: #555;
+  opacity: 0.4;
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 18px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px;
+}
+
+#myBtn:hover {
+  //background-color: rgba(#555,0.6); /* Add a dark-grey background on hover */
+  background-color: #555;
+  opacity: 0.6;
+}
+
+/* Code from w3schools - Loader animation */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #4D4D4D;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
 }

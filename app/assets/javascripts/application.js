@@ -22,3 +22,37 @@ $(document).ready(function(){
     $('.alert').fadeOut();
   }, 3400);// 3.4 seconds
 });
+
+/*
+  Code from w3schools - Scroll to top button
+  @description When the user scrolls down 70px from the top of the document, show the button
+*/
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Chrome, Safari and Opera
+    document.documentElement.scrollTop = 0; // For IE and Firefox
+}
+
+/*
+  Code from w3schools - Spinner animation
+*/
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 6000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
