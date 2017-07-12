@@ -45,7 +45,7 @@ function topFunction() {
 
 /*
   Code from w3schools - Spinner animation
-*/
+
 var myVar;
 
 function myFunction() {
@@ -56,3 +56,5 @@ function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("myDiv").style.display = "block";
 }
+
+*/

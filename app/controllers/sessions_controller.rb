@@ -1,7 +1,6 @@
 class SessionsController < ApplicationController
 
   def new
-
   end
 
   def create
@@ -11,7 +10,7 @@ class SessionsController < ApplicationController
       flash[:success] = "You have successfully logged in"
       redirect_to user_path(user)
     else
-      # falsh.now persists only on the reder 'new' page
+      # flash.now persists only on the render 'new' page
       flash.now[:danger] = "There was something wrong with your login information"
       render 'new'
     end
