@@ -64,6 +64,7 @@ footer small {
   list-style: none;
   text-align: center;
   padding-left: 0;
+  display: inline;
 }
 
 .btn-xlarge {
@@ -148,18 +149,18 @@ footer small {
   outline: none; /* Remove outline */
   //background-color: rgba(#555,0.4); /* Set a background color */
   background-color: #555;
-  opacity: 0.4;
+  opacity: 0.3;
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 18px; /* Some padding */
+  padding: 20px; /* Some padding */
   border-radius: 10px; /* Rounded corners */
-  font-size: 18px;
+  font-size: 20px;
 }
 
 #myBtn:hover {
   //background-color: rgba(#555,0.6); /* Add a dark-grey background on hover */
   background-color: #555;
-  opacity: 0.6;
+  opacity: 0.5;
 }
 
 /* Code from w3schools - Loader animation
