@@ -34,6 +34,9 @@ class UsersController < ApplicationController
         flash[:success] = "The account #{ @user.username } was successfully updated"
       end
       redirect_to users_path
+    elsif @user.update(admin_params)
+      @user.toggle!(:admin)
+      flash[:success] = "The account #{ @user.username }, was successfully updated to Admin"
     else
       render 'edit'
     end
@@ -58,6 +61,10 @@ class UsersController < ApplicationController
   private
   def user_params
     params.require(:user).permit(:username, :email, :password)
+  end
+
+  def admin_params
+    params.require(:user).permit(:admin)
   end
 
   def set_user
