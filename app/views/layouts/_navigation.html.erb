@@ -14,11 +14,11 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><%= link_to "Articles", articles_path %></li>
-        <li><%= link_to "Users", users_path %></li>
+        <li><%= link_to "Articles", articles_path, class: "color" %></li>
+        <li><%= link_to "Users", users_path, class: "color" %></li>
         <% if logged_in? %>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Actions <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle color" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Actions <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><%= link_to "New Article", new_article_path %></li>
               <li><a href="#">Another action</a></li>
@@ -31,20 +31,20 @@
           </li>
         <% end %>
       </ul>
-      <form class="navbar-form navbar-left">
+      <!-- <form class="navbar-form navbar-left">
         <div class="form-group">
           <input type="text" class="form-control" placeholder="Search">
         </div>
-        <button type="submit" class="button btn btn-default">Submit</button>
-      </form>
+        <button type="submit" class="button btn btn-default">Search</button>
+      </form> -->
       <ul class="nav navbar-nav navbar-right">
         <% if logged_in? %>
-          <li><%= link_to 'Log out', logout_path, method: :delete %></li>
+          <li><%= link_to 'Log out', logout_path, class: "color", method: :delete %></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-              <div class="chip">
+              <div class="chip color">
                 <img src="/assets/img_avatar.png" alt="User">
-                  <% if current_user.admin? %> Admin<% else %><%= current_user.username %><% end %><span class="caret"></span>
+                  <% if current_user.admin? %>Admin<% else %><%= current_user.username %><% end %><span class="caret"></span>
               </div>
             </a>
             <ul class="dropdown-menu">
@@ -56,8 +56,8 @@
             </ul>
           </li>
         <% else %>
-          <li><%= link_to 'Log in', login_path %></li>
-          <li><%= link_to 'Sign up', signup_path %></li>
+          <li><%= link_to 'Log in', login_path, class: "color" %></li>
+          <li><%= link_to 'Sign up', signup_path, class: "color" %></li>
         <% end %>
       </ul>
     </div><!-- /.navbar-collapse -->

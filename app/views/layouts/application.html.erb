@@ -12,10 +12,15 @@
   <body>
 
     <!-- Back to top button -->
-    <button onclick="topFunction()" class="btn btn-info btn-lg" id="myBtn" title="Back to Top" align="center"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></button>
+    <button onclick="topFunction()" class="btn btn-info btn-lg" id="myBtn" title="Back to Top" align="center">
+      <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
+    </button>
 
     <!-- Navigation bar -->
     <%= render 'layouts/navigation' %>
+
+    <!-- Header -->
+    <%=render "layouts/header" %>
 
     <div class="container">
       <!-- Error messages -->
@@ -27,7 +32,7 @@
     <%= render 'layouts/footer' %>
 
     <!-- Debugger -->
-    <%= debug(params) if Rails.env.development? %>
+    <!-- <%= debug(params) if Rails.env.development? %> -->
 
   </body>
 </html>

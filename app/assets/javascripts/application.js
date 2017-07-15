@@ -30,10 +30,12 @@ $(document).ready(function(){
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
-        document.getElementById("myBtn").style.display = "block";
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+      document.getElementById("myBtn").style.display = "block";
+      $('.navbar').css('background-color','white');
     } else {
-        document.getElementById("myBtn").style.display = "none";
+      document.getElementById("myBtn").style.display = "none";
+      $('.navbar').css('background-color','');
     }
 }
 
