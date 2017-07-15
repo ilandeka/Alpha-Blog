@@ -52,6 +52,24 @@ footer small {
 }
 
 /*-- Classes --*/
+.messages{
+  position: relative;
+}
+.btn-xlarge {
+  font-size: 1.7em;
+  color: white !important;
+}
+
+/*Bootstrap button outline override*/
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #f44336;
+  transition: all .5s;
+}
+
+.btn-outline:hover {
+  background-color: #f44336;
+}
 .center {
   text-align: center;
 }
@@ -129,15 +147,6 @@ footer small {
   text-align: center;
   padding-left: 0;
   display: inline;
-}
-
-.btn-xlarge {
-  font-size: 1.7em;
-  background-color: #f44336;
-}
-
-.btn-xlarge:hover {
-
 }
 
 .article-actions {
