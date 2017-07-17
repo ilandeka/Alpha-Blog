@@ -53,12 +53,19 @@ footer small {
 }
 
 /*-- Classes --*/
-.messages{
-  position: relative;
-  z-index: -1;
-  margin: 0;
-  padding: 0;
+.alert-container {
+  position: absolute;
+  left: 0;
+  right: 0;
 }
+
+.alert {
+  position: relative;
+  z-index: 999999;
+  left: 0;
+  right: 0;
+}
+
 .btn-xlarge {
   font-size: 1.7em;
   color: white !important;
