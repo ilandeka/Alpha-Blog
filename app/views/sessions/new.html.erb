@@ -1,30 +1,42 @@
-<h1 class="alignment">Log in</h1>
+<div class="col-md-6 col-md-offset-3 user">
+  <h1 class="alignment">Log in</h1>
 
-<%= form_for(:session, :html => {class: "form-horizontal", role: "form"}, url: login_path) do |f| %>
-  <div class="form-group">
-    <div class="control-label col-sm-4">
-      <%= f.label :email, class: "white" %>
+<div class="row">
+  <div class="col-xs-12">
+  <%= form_for(:session, :html => {class: "form-horizontal", role: "form"}, url: login_path) do |f| %>
+    <div class="form-group">
+      <div class="control-label col-sm-3">
+        <%= f.label :email %>
+      </div>
+      <div class="col-sm-6">
+        <%= f.email_field :email, class: "form-control", placeholder: "Enter email", autofocus: true %>
+      </div>
     </div>
-    <div class="col-sm-4">
-      <%= f.email_field :email, class: "form-control", placeholder: "Enter email", autofocus: true %>
+    <div class="form-group alignment">
+      <div class="control-label col-sm-3">
+        <%= f.label :password %>
+      </div>
+      <div class="col-sm-6">
+        <%= f.password_field :password, class: "form-control", placeholder: "Enter password", autocomplete: "off" %>
+      </div>
     </div>
-  </div>
-  <div class="form-group">
-    <div class="control-label col-sm-4">
-      <%= f.label :password, class: "white" %>
+    <div class="form-group">
+      <div class="col-sm-offset-1 col-sm-10 alignment">
+        <%= f.submit "Log in", class: "btn btn-primary btn-lg" %>
+      </div>
     </div>
-    <div class="col-sm-4">
-      <%= f.password_field :password, class: "form-control", placeholder: "Enter password", autocomplete: "off" %>
-    </div>
-  </div>
-  <div class="form-group">
-    <div class="col-sm-offset-1 col-sm-10 alignment">
-      <%= f.submit "Log in", class: "btn btn-primary btn-lg" %>
-    </div>
+
+  <% end %>
+
+  <div class="col-xs-8 col-xs-offset-2 center">
+    [ <%= link_to 'Cancel request and return to articles listing', articles_path, class: "red" %> ]
   </div>
 
-<% end %>
+  <div class="col-xs-8 col-xs-offset-2 center">
+    Don't have an account? <%= link_to 'Create one here', signup_path, class: "red" %>
+  </div>
 
-<div class="col-xs-4 col-xs-offset-4" align="center">
-  [ <%= link_to 'Cancel request and return to articles listing', articles_path, class: "white red" %> ]
+  </div>
+</div>
+
 </div>

@@ -16,20 +16,23 @@
       <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span>
     </button>
 
-    <!-- Navigation bar -->
-    <%= render 'layouts/navigation' %>
+    <div id="wrapper">
+      <!-- Navigation bar -->
+      <%= render 'layouts/navigation' %>
 
-    <!-- Header -->
-    <%=render "layouts/header" %>
+      <!-- Header -->
+      <%=render "layouts/header" %>
 
-    <div class="container">
-      <!-- Error messages -->
-      <%= render 'layouts/messages', class: "messages" %>
-      <%= yield %>
+      <div class="container">
+        <!-- Error messages -->
+        <%= render 'layouts/messages', class: "messages" %>
+        <%= yield %>
+      </div>
+
+      <!-- Footer -->
+      <%= render 'layouts/footer' %>
     </div>
 
-    <!-- Footer -->
-    <%= render 'layouts/footer' %>
 
     <!-- Debugger -->
     <!-- <%= debug(params) if Rails.env.development? %> -->

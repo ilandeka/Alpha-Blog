@@ -5,7 +5,7 @@
 @import "bootstrap";
 
 /*-- General --*/
-body {
+html,body {
   font-family: 'Oswald', sans-serif;
   background: asset-url('6.jpg') no-repeat center center fixed;// pic #6
   -webkit-background-size: cover;
@@ -16,16 +16,17 @@ body {
   height: 100%;
   top: 0;
   left: 0;
+  margin: 0;
+  padding: 0;
 }
 
 footer {
-  position: fixed;
-  clear: both;
-  right: 0;
+  width: 100%;
+  height: 42px;
+  position: absolute;
   bottom: 0;
   left: 0;
   background-color: rgba(#6E6E6E,0.4);
-  margin-top: 150px;
   padding-top: 10px;
   padding-left: 15px;
   padding-right: 15px;
@@ -54,6 +55,9 @@ footer small {
 /*-- Classes --*/
 .messages{
   position: relative;
+  z-index: -1;
+  margin: 0;
+  padding: 0;
 }
 .btn-xlarge {
   font-size: 1.7em;
@@ -70,6 +74,7 @@ footer small {
 .btn-outline:hover {
   background-color: #f44336;
 }
+
 .center {
   text-align: center;
 }
@@ -95,12 +100,17 @@ footer small {
 }
 
 .alignment {
-  padding-bottom: 50px;
+  margin-bottom: 40px;
   text-align: center;
 }
 
+.paginate {
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+}
+
 .main {
-  padding-top: 150px;
+  padding-top: 130px;
   padding-bottom: 100px;
   text-align: center;
   font-size: 7.9em;
@@ -120,26 +130,15 @@ footer small {
   width: 100%;
   padding: 0;
   z-index: 99; /* Put it in front - doesn't overlap*/
-  //background-color: rgba(#fff, 0.8);   // Transparent, 0.7 -> opacity
   border-left: 6px solid #f44336;
   background-color: rgba(255,255,255,0);
 }
 
-.jumbotron {
-  color: black;
-  //background-image: asset-url('7.jpg');
-  background-color: rgba(#eaeaea,0.6);
-  background-size: cover;
-  width: 100%;
-  height: 550px;
-}
-
-.jumbotron h1 {
-  color: #f44336;
-  text-align: center;
-  margin-bottom: 30px;
-  letter-spacing: -1px;
-  font-weight: bold;
+.user {
+  background-color: rgba(#eaeaea,0.8);
+  border-top: 6px solid #f44336;
+  border-radius: 5px;
+  padding: 5px;
 }
 
 .listing {
@@ -197,6 +196,11 @@ footer small {
 }
 
 /*-- IDs --*/
+#wrapper {
+  min-height: 100%;
+  position: relative;
+}
+
 #logo {
   float: left;
   font-size: 1.7em;
