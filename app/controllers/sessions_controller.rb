@@ -17,7 +17,9 @@ class SessionsController < ApplicationController
   end
 
   def destroy
+    # Need to fix this so when user logs out they cannot click back and be logged in!
     session[:user_id] = nil
+    session.delete(:user_id)
     flash[:success] = "You have logged out"
     redirect_to root_path
   end

@@ -4,6 +4,7 @@
     <title>Alpha Blog</title>
     <%= favicon_link_tag 'icon.png' %>
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script src="https://use.fontawesome.com/5b186725ec.js"></script>
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -28,11 +29,10 @@
         <%= render 'layouts/messages' %>
         <%= yield %>
       </div>
-
-      <!-- Footer -->
-      <%= render 'layouts/footer' %>
     </div>
 
+    <!-- Footer -->
+    <%= render 'layouts/footer' %>
 
     <!-- Debugger -->
     <!-- <%= debug(params) if Rails.env.development? %> -->

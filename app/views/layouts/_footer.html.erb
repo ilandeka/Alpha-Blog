@@ -1,12 +1,71 @@
 <div class="container">
   <footer class="footer">
-    <small>
-      Copyright &copy; 2017. <a href="http://www.landekaivan.tk/game.html">Ivan Landeka</a> All Rights Reserved.
-    </small>
-    <nav>
-      <ul>
-        <li><%= link_to "About", about_path %></li>
-      </ul>
-    </nav>
+    <div class="row col-sm-12">
+      <div class="col-sm-3 menu">
+        <h5>Key Pages</h5>
+        <ul class="nav justify-content-center">
+          <li>
+            <%= link_to "Home", root_path %>
+          </li>
+          <li>
+            <%= link_to "Users", users_path %>
+          </li>
+          <li>
+            <%= link_to "Articles", articles_path %>
+          </li>
+          <li>
+            <%= link_to "Categories" %>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-3 menu">
+        <h5>Good Info</h5>
+        <ul class="nav justify-content-center">
+          <li>
+            <%= link_to "About", about_path %>
+          </li>
+          <li>
+            <%= link_to "Contact Us" %>
+          </li>
+          <li>
+            <%= link_to "Terms of Use" %>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-3 menu">
+        <h5>Connect</h5>
+        <ul class="nav justify-content-center">
+          <li>
+            <a href="https://www.facebook.com/ketodietexpert/">Newsletter</a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/ketodietexpert/">Facebook</a>
+          </li>
+          <li>
+            <a href="https://www.pinterest.com/ketoexpert/">Pinterest</a>
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-3 menu">
+        <h5>Social</h5>
+        <ul class="nav justify-content-center">
+          <li>
+            <a href="facebook.com"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="instagram.com"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
+          </li>
+          <li>
+            <a href="twitter.com"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="row col-sm-offset-4 col-sm-4 alignment" style="margin-top: 60px;">
+      <small>
+        Copyright &copy; 2017. <a href="http://www.landekaivan.tk/game.html">Ivan Landeka</a> All Rights Reserved.
+      </small>
+    </div>
   </footer>
 </div>
