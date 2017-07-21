@@ -1,11 +1,13 @@
 <h1 class="center">Listing all articles</h1>
 
-<div align="center">
-  <%= will_paginate %>
-</div>
+<div class="col-lg-10 col-lg-offset-1">
+  <div align="center">
+    <%= will_paginate %>
+  </div>
 
-<%= render 'article', obj: @articles %>
+  <%= render 'article', obj: @articles %>
 
-<div class="alignment">
-  <%= will_paginate %>
+  <div class="alignment">
+    <%= will_paginate %>
+  </div>
 </div>
