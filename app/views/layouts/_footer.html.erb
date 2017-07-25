@@ -1,64 +1,30 @@
 <div class="container">
   <footer class="footer">
     <div class="row col-sm-12">
-      <div class="col-sm-3 menu">
-        <h5>Key Pages</h5>
-        <ul class="nav justify-content-center">
-          <li>
-            <%= link_to "Home", root_path %>
-          </li>
-          <li>
-            <%= link_to "Users", users_path %>
-          </li>
-          <li>
-            <%= link_to "Articles", articles_path %>
-          </li>
-          <li>
-            <%= link_to "Categories" %>
-          </li>
-        </ul>
+      <div class="col-sm-3 col-sm-offset-1 menu">
+        <h5>Pages</h5>
+        <div class="list-group center">
+          <a class="list-group-item red" href="<%= root_path %>"><i class="fa fa-home fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Home</a>
+          <a class="list-group-item red" href="<%= users_path %>"><i class="fa fa-users fa-fw" aria-hidden="true"></i>&nbsp; Users</a>
+          <a class="list-group-item red" href="<%= articles_path %>"><i class="fa fa-newspaper-o fa-fw" aria-hidden="true"></i>&nbsp; Articles</a>
+          <a class="list-group-item red" href="#"><i class="fa fa-list-ul fa-fw" aria-hidden="true"></i>&nbsp; Categories</a>
+        </div>
       </div>
-      <div class="col-sm-3 menu">
-        <h5>Good Info</h5>
-        <ul class="nav justify-content-center">
-          <li>
-            <%= link_to "About", about_path %>
-          </li>
-          <li>
-            <%= link_to "Contact Us" %>
-          </li>
-          <li>
-            <%= link_to "Terms of Use" %>
-          </li>
-        </ul>
+      <div class="col-sm-3 col-sm-offset-1 menu">
+        <h5>Info</h5>
+        <div class="list-group center">
+          <a class="list-group-item red" href="<%= about_path %>"><i class="fa fa-book fa-fw" aria-hidden="true"></i>&nbsp; About</a>
+          <a class="list-group-item red" href="#"><i class="fa fa-phone fa-fw" aria-hidden="true"></i>&nbsp; Contact Us</a>
+          <a class="list-group-item red" href="#"><i class="fa fa-check-square-o fa-fw" aria-hidden="true"></i>&nbsp; Terms of Use</a>
+        </div>
       </div>
-      <div class="col-sm-3 menu">
-        <h5>Connect</h5>
-        <ul class="nav justify-content-center">
-          <li>
-            <a href="https://www.facebook.com/ketodietexpert/">Newsletter</a>
-          </li>
-          <li>
-            <a href="https://www.facebook.com/ketodietexpert/">Facebook</a>
-          </li>
-          <li>
-            <a href="https://www.pinterest.com/ketoexpert/">Pinterest</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-sm-3 menu">
+      <div class="col-sm-3 col-sm-offset-1 menu">
         <h5>Social</h5>
-        <ul class="nav justify-content-center">
-          <li>
-            <a href="facebook.com"><i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></a>
-          </li>
-          <li>
-            <a href="instagram.com"><i class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
-          </li>
-          <li>
-            <a href="twitter.com"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a>
-          </li>
-        </ul>
+        <div class="list-group center">
+          <a class="list-group-item red" href="facebook.com"><i class="fa fa-facebook-official fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Facebook</a>
+          <a class="list-group-item red" href="instagram.com"><i class="fa fa-instagram fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Instagram</a>
+          <a class="list-group-item red" href="twitter.com"><i class="fa fa-twitter fa-fw fa-lg" aria-hidden="true"></i>&nbsp; Twitter</a>
+        </div>
       </div>
     </div>
     <!-- Footer -->
